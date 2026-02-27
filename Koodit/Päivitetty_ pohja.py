@@ -61,14 +61,10 @@ def pelin_luonti(start_alcohol, lento_voima, sijainti, nimi, kentat):
             cursor.execute(sql, (peli_id, uusi_kentat[i]['ident'], goal_id))
     return peli_id
 
-
-
 kaikki_kentat = lokaatiot()
 
 # Pelin aloitus määrät
 peli_id = pelin_luonti(1000, 2000, "EFHK", "Darrapukki", kaikki_kentat)
-
-
 
 currentgoal = 0
 numofgoals = 10  # 10 leiman approt?
@@ -93,6 +89,5 @@ elif Tarina == "SKIP":
 # tekee pelaajan
 def luo_pelaaja():
     print(f"Pelaaja: Darrapukki | Peli ID: {peli_id}")
-
 
 luo_pelaaja()
