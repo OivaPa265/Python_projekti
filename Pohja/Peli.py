@@ -7,9 +7,9 @@ import mysql.connector
 Yhdiste = mysql.connector.connect(
     host="localhost",
     port=3306,
-    database="demo",
+    database="Insert your database here",
     user="root",
-    password="7523",
+    password="insert your password here",
     autocommit=True,
 )
 # Valitsee 15 satunaista lentokentää suomesta ja lajitelee ne aakosa järjestyksesttä
@@ -55,3 +55,4 @@ def pelin_luonti(start_alcohol, lento_voima,Sijainti, nimi, kentat):
 
 # antaa aloitus määrät eli. Pelaaja aloitaa pelin 1000L alkoholia, pelaaja pystyy liikumaan 2000? pelaaja aloittaa Helsinki vantaan lento kentällä. Pelaajan nimi on pakosta vaikka hän ei halua on Darrapukki.
 pelin_luonti(1000, 2000, "EFHK", "Darrapukki")
+
