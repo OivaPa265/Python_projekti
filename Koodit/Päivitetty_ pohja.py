@@ -26,7 +26,6 @@ ORDER BY name asc;"""
     cursor.execute(sql)
     return cursor.fetchall()
 
-
 # tekee tehtäviä # no shit - ME 27/2/2026
 def tehtavat():
     sql = """SELECT * From goal;"""
@@ -91,3 +90,4 @@ def luo_pelaaja():
     print(f"Pelaaja: Darrapukki | Peli ID: {peli_id}")
 
 luo_pelaaja()
+
