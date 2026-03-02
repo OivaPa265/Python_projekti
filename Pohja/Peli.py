@@ -1,8 +1,6 @@
 import random
 import Lore
-import mysql.connector
-# UNFINISHED DOSE NOT WORK YET
-# YOU YES YOU CANNOT RUN THIS PROGRAM it wont run cause its unfinished i will try to fix it
+
 # Muodostaa yhdistyksen tietokantoihin
 Yhdiste = mysql.connector.connect(
     host="localhost",
@@ -55,4 +53,5 @@ def pelin_luonti(start_alcohol, lento_voima,Sijainti, nimi, kentat):
 
 # antaa aloitus määrät eli. Pelaaja aloitaa pelin 1000L alkoholia, pelaaja pystyy liikumaan 2000? pelaaja aloittaa Helsinki vantaan lento kentällä. Pelaajan nimi on pakosta vaikka hän ei halua on Darrapukki.
 pelin_luonti(1000, 2000, "EFHK", "Darrapukki")
+
 
